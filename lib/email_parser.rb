@@ -14,9 +14,17 @@ class EmailAddressParser
   end
   
   def parse
+<<<<<<< HEAD
        @email.split.map do |address| 
         address.split(',')
     end.flatten.uniq
+=======
+    # binding.pry
+    array = []
+    parsed_array = @email.split(",")
+    array << parsed_array[0] << parsed_array[1].strip
+    array
+>>>>>>> 526e2ab62d716ace04e6519c60cb8142ece1ce4e
   end
   
 end
